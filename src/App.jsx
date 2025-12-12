@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter , Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import { CartProvider } from "./contexts/CartContext";
 import { Toaster } from "./components/ui/sonner";
@@ -15,13 +15,13 @@ const App = () => {
   return (
     <LanguageProvider>
       <CartProvider>
-        <BrowserRouter>
+        <BrowserRouter >
           <div className="flex flex-col min-h-screen">
             <Header />
 
             <main className="flex-grow">
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/furniture/" element={<Home />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/about" element={<About />} />
