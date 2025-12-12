@@ -12,7 +12,7 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-    { path: '/', label: t('home') },
+    { path: '/furniture/', label: t('home') },
     { path: '/products', label: t('products') },
     { path: '/about', label: t('about') },
     { path: '/contact', label: t('contact') }
@@ -25,7 +25,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/furniture/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 bg-gradient-to-br from-amber-600 to-amber-800 rounded-lg flex items-center justify-center transform group-hover:scale-105 transition-transform duration-300 shadow-md">
               <span className="text-2xl font-bold text-white">AF</span>
             </div>
